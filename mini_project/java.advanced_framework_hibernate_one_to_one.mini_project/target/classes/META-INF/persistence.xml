@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+    version="3.0">
+
+    <persistence-unit name="university">
+
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.University</class>
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.College</class>
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.Department</class>
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.Hod</class>
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.Teacher</class>
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.Student</class>
+        <class>com.capgemini.java.advanced_framework_hibernate_one_to_one.mini_project.entity.Project</class>
+
+        <properties>
+
+            <property name="jakarta.persistence.jdbc.driver"
+                value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                value="jdbc:mysql://localhost:3306/university_db"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                value="1234"/>
+
+            <property name="hibernate.hbm2ddl.auto"
+                value="update"/>
+
+            <property name="hibernate.show_sql"
+                value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
